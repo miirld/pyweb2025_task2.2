@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6f7f9;
+    color: #2b2b2b;
+}
+
+body.references .container {
+    background-color: #e0f2fe;
+    border-left: 4px solid #60a5fa;
+    padding: 32px;
+}
+
+h1,
+h2,
+h3 {
+    margin: 24px 0 12px;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111827;
+    color: #ffffff;
+    z-index: 1000;
+}
+
+.header__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #e5e7eb;
+}
+
+.nav {
+    position: fixed;
+    top: 96px;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #1f2937;
+    z-index: 900;
+}
+
+.nav__link {
+    color: #e5e7eb;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav__link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.nav__link.active {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.divider {
+    height: 152px;
+}
+
+.main {
+    padding: 40px clamp(24px, 5vw, 80px);
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #111827;
+    color: #e5e7eb;
+    font-size: 0.9rem;
+}
